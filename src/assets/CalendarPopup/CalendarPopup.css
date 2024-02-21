@@ -1,0 +1,155 @@
+.calendar-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-date {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 5px;
+  max-width: 650px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 16px 16px 0px 0px 
+}
+
+.calendar-container {
+  max-width: 650px;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+  border-radius: 0 0 16px 16px;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+.days-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+}
+
+.day {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.empty-cell {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  background-color: #f0f0f0;
+}
+
+.current-date {
+  cursor: pointer;
+  color: black;
+  max-width: 300px;
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+.month-navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  gap: 10px;
+  background-color: #f0f0f0;
+}
+
+.current-month {
+  color: black;
+  max-width: 120px;
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.month-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.month-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.descriptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.description {
+  display: block;
+  width: 200px;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all .4s ease-in-out;
+}
+
+.description:hover {
+  background-color: rgb(180, 224, 229);
+}
+
+.selected-day-data {
+  display: flex;
+  padding: 20px 0;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  min-height: 350px;
+  max-width: 650px;
+  width: 100%;
+}
+
+.title {
+  color: black;
+}
+
+.arrow {
+  padding: 0 10px;
+  color: black;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
